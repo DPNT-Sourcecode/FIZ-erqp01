@@ -11,6 +11,10 @@ def fizz_buzz(number):
     in3 = '3' in snumber
     in5 = '5' in snumber
     delx = (snumber == len(snumber) * snumber[0]) and (number > 10) #check for deluxe
+    if (number % 2 ==0 ):   #check even/odd
+        fdeluxe = 'deluxe'
+    else:
+        fdeluxe = 'fake deluxe'
     
     if (res3[0]==0.0 or in3):
         mult3 = True
@@ -26,13 +30,14 @@ def fizz_buzz(number):
     
     if (delx):
         if (result == ''):
-            result = 'deluxe'
+            result = fdeluxe
         else:
-            result = result + ' deluxe'
+            result = result + fdeluxe
     
     if (result == ''):
         return(number)
     else:
         return(result)
+
 
 
