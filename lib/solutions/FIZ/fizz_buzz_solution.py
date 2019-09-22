@@ -5,20 +5,27 @@ def fizz_buzz(number):
     mult3 = False
     mult5 = False
     result = ''
-    res3 = math.modf(number/3.0)
-    res5 = math.modf(number/5.0)
+    res3 = (math.modf(number/3.0) == 0.0)
+    res5 = (math.modf(number/5.0) == 0.0)
     snumber = str(number)
     in3 = '3' in snumber
     in5 = '5' in snumber
-    delx = (snumber == len(snumber) * snumber[0]) and (number > 10) #check for deluxe
+    #delx = (snumber == len(snumber) * snumber[0]) and (number > 10) #check for deluxe
+    
+    delx = False
+    IF (res3 and in3):
+        delx = True
+    IF (res5 and in5):
+        delx = True
+
     if (number % 2 ==0 ):   #check even/odd
         fdeluxe = 'deluxe'
     else:
         fdeluxe = 'fake deluxe'
     
-    if (res3[0]==0.0 or in3):
+    if (res3 or in3):
         mult3 = True
-    if (res5[0]==0.0 or in5):
+    if (res5 or in5):
         mult5 = True
 
     if (mult3):
@@ -38,6 +45,7 @@ def fizz_buzz(number):
         return(number)
     else:
         return(result)
+
 
 
 
