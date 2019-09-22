@@ -28,14 +28,14 @@ def fizz_buzz(number):
         if (result == ''):
             result = 'deluxe'
         else:
-            result = result + 'deluxe'
+            result = result + ' deluxe'
     
     if (result == ''):
         return(number)
     else:
         return(result)
 
-r1 = fizz_buzz(15)
-r2 = fizz_buzz(555)
+
+
 
 
