@@ -11,10 +11,11 @@ class TestHlo2():
         assert fizz_buzz_solution.fizz_buzz(53) == 'fizz buzz'
         assert fizz_buzz_solution.fizz_buzz(444) == 'deluxe'
         assert fizz_buzz_solution.fizz_buzz(55) == 'buzz deluxe'
-        assert fizz_buzz_solution.fizz_buzz(55) == 'fizz deluxe'
+        assert fizz_buzz_solution.fizz_buzz(33) == 'fizz deluxe'
         assert fizz_buzz_solution.fizz_buzz(8) == 8
         
         
         
         
+
 
