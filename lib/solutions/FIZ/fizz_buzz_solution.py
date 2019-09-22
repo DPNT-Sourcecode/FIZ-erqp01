@@ -13,9 +13,9 @@ def fizz_buzz(number):
     #delx = (snumber == len(snumber) * snumber[0]) and (number > 10) #check for deluxe
     
     delx = False
-    IF (res3 and in3):
+    if (res3 and in3):
         delx = True
-    IF (res5 and in5):
+    if (res5 and in5):
         delx = True
 
     if (number % 2 ==0 ):   #check even/odd
@@ -45,6 +45,8 @@ def fizz_buzz(number):
         return(number)
     else:
         return(result)
+
+fizz_buzz(12)
 
 
 
