@@ -4,11 +4,11 @@ import math
 def fizz_buzz(number):
     mult3 = False
     mult5 = False
-    a = math.modf(number/3.0)
-    b = math.modf(number/5.0)
-    if (a[0]==0.0):
+    res3 = math.modf(number/3.0)
+    res5 = math.modf(number/5.0)
+    if (res3[0]==0.0):
         mult3 = True
-    if (b[0]==0.0):
+    if (res5[0]==0.0):
         mult5 = True
     if (mult3 and mult5):
         return('fizz buzz')
@@ -18,6 +18,7 @@ def fizz_buzz(number):
         return('buzz')
 
     return(number)
+
 
 
 
