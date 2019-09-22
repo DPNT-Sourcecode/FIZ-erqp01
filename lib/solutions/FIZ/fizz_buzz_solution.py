@@ -32,12 +32,13 @@ def fizz_buzz(number):
         if (result == ''):
             result = fdeluxe
         else:
-            result = result + fdeluxe
+            result = result + ' ' + fdeluxe
     
     if (result == ''):
         return(number)
     else:
         return(result)
+
 
 
 
