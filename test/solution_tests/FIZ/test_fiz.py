@@ -6,9 +6,13 @@ class TestHlo2():
         assert fizz_buzz_solution.fizz_buzz(12) == 'fizz'
         assert fizz_buzz_solution.fizz_buzz(10) == 'buzz'
         assert fizz_buzz_solution.fizz_buzz(15) == 'fizz buzz'
+        assert fizz_buzz_solution.fizz_buzz(31) == 'fizz'
+        assert fizz_buzz_solution.fizz_buzz(51) == 'buzz'
+        assert fizz_buzz_solution.fizz_buzz(53) == 'fizz buzz'
         assert fizz_buzz_solution.fizz_buzz(8) == 8
         
         
         
         
+
 

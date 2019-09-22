@@ -22,8 +22,11 @@ def fizz_buzz(number):
 
     return(number)
 
-r1 = fizz_buzz(3)
+r1 = fizz_buzz(53)
 r2 = fizz_buzz(31)
 r3 = fizz_buzz(5)
+r4 = fizz_buzz(357)
+r5 = 0
+
 
 
