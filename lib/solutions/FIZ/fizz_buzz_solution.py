@@ -10,11 +10,15 @@ def fizz_buzz(number):
         mult3 = True
     if (b[0]==0.0):
         mult5 = True
-    return (number)
+    if (mult3 and mult5):
+        return('fizz buzz')
+    if (mult3):
+        return('fizz')
+    if (mult5):
+        return('buzz')
 
-fizz_buzz(3)
-fizz_buzz(15)
-fizz_buzz(4)
+    return(number)
+
 
 
 
