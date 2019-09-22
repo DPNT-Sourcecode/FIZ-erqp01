@@ -5,8 +5,8 @@ def fizz_buzz(number):
     mult3 = False
     mult5 = False
     result = ''
-    res3 = (math.modf(number/3.0) == 0.0)
-    res5 = (math.modf(number/5.0) == 0.0)
+    res3 = (number % 3 ==0)
+    res5 = (number % 5 ==0)
     snumber = str(number)
     in3 = '3' in snumber
     in5 = '5' in snumber
@@ -45,10 +45,5 @@ def fizz_buzz(number):
         return(number)
     else:
         return(result)
-
-fizz_buzz(12)
-
-
-
 
 
