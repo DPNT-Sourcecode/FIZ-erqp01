@@ -1,7 +1,7 @@
-from solutions.HLO import hello_solution
+from solutions.HLO2 import hello2_solution
 
+class TestHlo2():
+    def test_hlo2(self):
+        assert hello2_solution.hello('Mike') == 'Hello, Mike!'
 
-class TestHlo():
-    def test_hlo(self):
-        assert hello_solution.hello('Mike') == 'Hello, World!'
 
